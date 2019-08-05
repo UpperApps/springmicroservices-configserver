@@ -1,0 +1,24 @@
+server:
+  port: 8888
+# Spring Actuator configuration
+management:
+  endpoints:
+    health:
+      show-details: "always"
+    web:
+      exposure:
+        include: "*"
+    security:
+      enabled: false
+info:
+  app:
+    name: "@project.name@"
+    version: "@project.version@"
+    description: "@project.description@"
+spring:
+  # Spring Cloud Configuration
+  cloud:
+    config:
+      server:
+        git:
+          uri: "https://github.com/UpperApps/springmicroservices-config-repo"
