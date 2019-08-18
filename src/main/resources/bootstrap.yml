@@ -16,7 +16,7 @@ info:
     version: "@project.version@"
     description: "@project.description@"
 spring:
-  # Spring Cloud Configuration
+  # Spring Configuration Server Settings
   cloud:
     config:
       server:
